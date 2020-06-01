@@ -6,14 +6,91 @@
 	<meta name="viewport" content="width=device-width,intial-scale=1">	
 	<title>David CHu's China Bistro</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' type="text/css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
 
 </head>
 <body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="pull-left visible-md visible-lg visible-sm visible-xs">
+						<div id="logo-img" alt="Logo Image"></div>
+					</a>
+					<div class="navbar-brand">
+						<a href="index.html"><h1>THE NOODLE BAR</h1></a>
+						<p>
+							<img src="images/star-k-logo.png" alt="Kosher certification">
+							<span>Kosher Certified</span>
+						</p>
+					</div>
+					<button id="hamburger" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="collapsable-nav" class="collapse navbar-collapse">
+					<ul id="nav-list" class="nav navbar-nav navbar-right">
+						<li>
+							<a href="menu-categories.html">
+								<i class="fas fa-utensils"></i><br class="hidden-xs"> Menu
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fas fa-info-circle"></i><br class="hidden-xs"> About
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fas fa-award"></i><br class="hidden-xs"> Awards
+							</a>
+						</li>
+						<li id="phone" class="hidden-xs">
+							<a href="tel:410-602-5008">
+								<span>410-602-5008</span>
+							</a><div>We Deliver</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div id="call-btn" class=" text-center visible-xs">
+		<a href="tel:410-602-5008" class="btn">
+			<i class="fas fa-phone-alt"></i>
+			410-602-5008
+		</a>
+	</div>
+	<div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
+	<div class="container" id="main-content">
+		<div class="jumbotron">
+			<img src="images/jumbotron_768.jpg" alt="Restaurant Picture" class="img-responsive visible-xs">
+		</div>
 
-
-
+		<div id="home-tiles" class="row">
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
+			</div>
+			<div class="col-md-4 col-sm-12 col-xs-12">
+				<a href="https://goo.gl/maps/3oNok5pqNJtPwcd3A" target="_blank">
+					<div id="map-tile">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60319.632990020225!2d72.79182892447656!3d19.108662196255906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9e9e42942ed%3A0x226778c40871176a!2sFacing%20East!5e0!3m2!1sen!2sin!4v1590959727782!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						<span>map</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
 
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
